@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "IDEC notifier",
+    "version": "0.1",
+    "description": "Отображает счетчик новых сообщений в сети IDEC.",
+    "author": "Boris Timofeev",
+    "homepage_url": "https://github.com/btimofeev/idec-notifier",
+    "icons": {
+        "48": "icons/idec-48.png",
+        "96": "icons/idec-96.png"
+    },
+    "applications": {
+        "gecko": {
+            "id": "idec-notifier@emunix.org",
+            "strict_min_version": "52"
+        }
+    },
+
+    "permissions": [
+        "<all_urls>",
+        "storage",
+        "alarms"
+    ],
+    
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "browser_action": {
+        "default_icon": "icons/idec-32.png"
+    },
+
+    "options_ui": {
+        "page": "options.html"
+    }
+}
