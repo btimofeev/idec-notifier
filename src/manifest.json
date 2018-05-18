@@ -12,7 +12,7 @@
     "applications": {
         "gecko": {
             "id": "idec-notifier@emunix.org",
-            "strict_min_version": "52"
+            "strict_min_version": "52.0"
         }
     },
 
